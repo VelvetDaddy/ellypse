@@ -294,4 +294,24 @@ color: #FF0000; /* Change color on hover, for example to red */
     margin-bottom: 15px;
 }
 
+.welcome-container {
+    position: relative;
+    padding-top: 60px; /* Same as the height of your sticky header */
+}
+
+#welcomeMessage {
+    position: relative; /* Changed from absolute to relative */
+    top: 0;
+    left: 80%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    color: black;
+    opacity: 0;
+    transition: opacity 2s ease, color 2s ease;
+    z-index: 1; /* Lower than the sticky header */
+    font-family: 'Playfair Display SC', serif;
+    padding-top: 20px; /* Additional space below the sticky header */
+    margin-bottom:150px;
+}
+
 
