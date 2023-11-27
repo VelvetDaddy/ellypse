@@ -52,3 +52,14 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
 });
+
+window.onload = function() {
+    // Other scripts
+
+    // Welcome Message Animation
+    var welcomeMessage = document.getElementById('welcomeMessage');
+    setTimeout(function() {
+        welcomeMessage.style.opacity = 1;
+        welcomeMessage.style.color = '#FFD700'; // Transition to gold color
+    }, 1000); // Adjust timing as needed
+};
